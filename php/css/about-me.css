@@ -1,0 +1,100 @@
+.about-me{
+    width: 90%;
+    margin: auto;
+    margin-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+.about-me h1{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 25px;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+
+.containerAbout{
+    width: 100%;
+    display: flex;
+   
+    margin-left: 100px;
+
+}
+
+
+.block{
+    width: 33%;
+}
+
+.block h2{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.block ul{
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+}
+
+.block ul li{
+    list-style: none;
+}
+
+
+.block ul li i{
+    margin-left: 20px;
+    font-size: 20px;
+    margin-right: 10px;
+    color: rgb(95, 1, 95);
+}
+
+
+
+.block2{
+    width: 33%;
+}
+
+.block2 h2{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+
+.block2 ul{
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+}
+
+.block2 ul li{
+    list-style: none;
+    margin-left: 20px;
+}
+
+
+
+
+.block3{
+    width: 33%;
+}
+
+.block3 h2{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.block3 table{
+    margin-top: 25px;
+}
+
+.block3 td, th {border:  1px solid;
+    padding: 10px;
+    min-width: 150px;
+    background: white;
+    box-sizing: border-box;
+    text-align: left;
+}
+
