@@ -1,6 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-<?php include './includes/head.html'; ?>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About-me</title>
+    <link rel="stylesheet" href="./css/erreur404.css" />
+    <link rel="stylesheet" href="./css/about-me.css" />
+    <link rel="stylesheet" href="./css/my-dreams.css" />
+    <link rel="stylesheet" href="./css/my-passions.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  <?php include './includes/police.html'; ?>
+  </head>
 
 <body>
 
@@ -8,43 +19,7 @@
 
   <?php include './includes/nav.html'; ?>
 
-  <?php
-  // $_GET permet de récupéré les caractères dans un URL par exemple http://about.me/$_GET 
-  // if (isset($_GET['toto'])) {
-  //     switch ($_GET['toto']) {
-  //   case 'about-me.html':
-  //     include './includes/about-me.html';
-  //     break;
-  //     case 'my-dreams.html':
-  //       include './includes/my-dreams.html';
-  //       break;
-  //       case 'my-passions.html':
-  //         include './includes/my-passions.html';
-  //         break;
-  //     }  
-  // }
-  // else {
-  //   include './includes/home.html'; 
-  // }
-
-  if (isset($_GET['toto'])) {
-    $page = $_GET['toto'];
-
-    if ($page === 'about-me.html') {
-      include './includes/about-me.html';
-    } else if ($page === 'my-dreams.html') {
-      include './includes/my-dreams.html';
-    } else if ($page === 'my-passions.html') {
-      include './includes/my-passions.html';
-    } else {
-      include './includes/erreur404.html';
-    }
-  } else {
-    include './includes/home.html';
-  }
-
-  ?>
-
+  <?php include './includes/functionNavigation.php'; ?>
 
   <?php include './includes/footer.html'; ?>
 
