@@ -1,30 +1,24 @@
+<?php $carte = [
+    [
+        'titre' => 'Vélo',
+        'img-mini' => 'images/bike-mini.jpg',
+        'img' => 'images/bike.jpg',
+        'figcaption' => 'Vélo type GRAVEL',
+        'text' => 'Le vélo est une pratique qui me permet de me ressourcer'
+    ],
+
+    [
+        'titre' => 'Jeux vidéos',
+        'img-mini' => 'images/league-of-legends-mini.jpg',
+        'img' => 'images/league-of-legends.jpg',
+        'figcaption' => 'Jeu league of legend',
+        'text' => 'VIVA LEAGUE OF LEGEND'
+    ],
+    // ['titre' => 'Lithoterapie', 'img' => '', 'figcaption' => 'photo de pierre', 'text' => 'blablabla'],
+];
 
 
-<?php  $carte = [
-                ['titre' => 'Vélo', 'img-mini' => 'images/bike-mini.jpg', 'img' => 'images/bike.jpg', 'figcaption' => 'Vélo type GRAVEL', 'text' => 'Le vélo est une pratique qui me permet de me ressourcer'],
-                ['titre' => 'Jeux vidéos', 'img-mini' => 'images/league-of-legends-mini.jpg', 'img' => 'images/league-of-legends.jpg', 'figcaption' => 'Jeu league of legend', 'text' => 'VIVA LEAGUE OF LEGEND'],
-                // ['titre' => 'Lithoterapie', 'img' => '', 'figcaption' => 'photo de pierre', 'text' => 'blablabla'],
-            ];
-            
-            
-        //    function affiche($carte){
-            // echo '<div>';
-            // foreach($carte as $infos){
 
-            //     // echo $infos;
-            //       echo '<h2>' .$infos['titre']. '</h2> <br>';
-            //       echo '<figure>';
-            //     //   echo '<img src="'.$infos['img']. '"alt ="" >';
-            //       echo  '<figcaption>';
-            //       echo $infos['figcaption'];
-            //       echo ' <br> </figcaption>';
-            //       echo '</figure> <br>';
-            //       echo '<p>' .$infos['text']. '</p>';
-            //       echo '</div>';
-            //   }
-            // }
-
-            
 //  $tab = array("toto", "tata", "tutu", "titi"); 
 
 // function affichee($tab){
@@ -33,7 +27,7 @@
 //   }
 // }
 // affichee($tab);
-  
+
 function affiche($carte)
 {
     foreach ($carte as $infos) {
@@ -50,12 +44,12 @@ function affiche($carte)
         HTML;
     }
 }
-    ?>      
-          <section>
+?>
+<section>
     <h1>Mes passions</h1>
     <div class="containerPassions">
-    <?php affiche($carte) ?>
-      <!-- <div class="block1">
+        <?php affiche($carte) ?>
+        <!-- <div class="block1">
           <h2>Vélo</h2>
           <figure>
              <a href="images/bike.jpg" target="_blank"> <img src="images/bike-mini.jpg" alt="Photo d'un vélo type GRAVEL"> </a>
@@ -65,7 +59,7 @@ function affiche($carte)
           </figure>
           <p>Le vélo est une pratique qui me permet de me ressourcer</p>
       </div> -->
-      <!-- <div class="block1">
+        <!-- <div class="block1">
           <h2>Jeux vidéos</h2>
           <figure>
            <a href="images/league-of-legends.jpg" target="_blank"> <img src="images/league-of-legends-mini.jpg" alt="Photo montrant le jeu league-of-legends"> </a>  
@@ -79,5 +73,5 @@ function affiche($carte)
 
     </div>
 
-   
-  </section>
+
+</section>
